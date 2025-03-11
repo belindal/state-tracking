@@ -1,0 +1,15 @@
+__pycache__
+.ipynb_checkpoints
+*checkpoint*/
+*data*/
+random*/
+data/
+word-problem/data/
+word-problem/
+wandb/
+cache/
+log*.txt
+figures/
+results/
+logs/
+probe_results/
