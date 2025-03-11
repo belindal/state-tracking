@@ -204,3 +204,17 @@ For example:
 bash bash_scripts/train.sh EleutherAI/pythia-160M 3 S3_NTP_data/train checkpoints/pythia_S3_NTP --supervision_type next_token
 ```
 
+## Citation
+To cite this work, use
+```
+@misc{li2025howlanguagemodelstrack,
+      title={(How) Do Language Models Track State?}, 
+      author={Belinda Z. Li and Zifan Carl Guo and Jacob Andreas},
+      year={2025},
+      eprint={2503.02854},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2503.02854}, 
+}
+```
+
