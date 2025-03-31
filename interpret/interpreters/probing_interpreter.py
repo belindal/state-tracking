@@ -49,8 +49,7 @@ class ProbeInterpreter(BaseInterpreter):
                 with self.model.trace() as tracer:
                     with tracer.invoke(prompt) as invoker:
                         # Get embeddings
-                        reps_layer = self.embeddings(invoker.inputs[0][0]["input_ids"]).squeeze(0)[token_positions].save()
-                        layer_reps["embed"] = reps_layer
+                        layer_reps["embed"] = self.embeddings.outputs[:, token_positions, :].save()
 
                         # Get layer representations
                         for layer_idx in range(self.n_layers):
